@@ -1,0 +1,641 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+.section1 {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+}
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.navbar {
+  height: 85px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  z-index: 1;
+  padding: 5px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 18px;
+  font-weight: 600;
+}
+.right-section {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.book-table-button {
+  padding: 11px 22px;
+  font-family: Gambetta Variable;
+  background-color: #936e48;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-right: 93px;
+  width: 113px;
+}
+.left-section {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  font-family: Manrope;
+  color: #fff;
+}
+.left-section ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+.left-section ul li {
+  float: left;
+  cursor: pointer;
+}
+.left-section img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20%;
+  margin-left: 10%;
+}
+
+.text-section {
+  position: absolute;
+  height: 65%;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(24, 21, 21, 0) 0%, #181515 90.26%);
+  padding-left: 5%;
+  padding-top: 10%;
+}
+.text-section p {
+  font-family: Manrope;
+  font-size: 35px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.explore-button {
+  border: 1.5px solid #936e48;
+  font-family: Manrope;
+  width: 110px;
+  font-size: 18px;
+  padding: 11px 22px;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  z-index: 0;
+  position: relative;
+}
+.explore-button:before {
+  content: "";
+  position: absolute;
+  background: #936e48;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  top: 0;
+  z-index: -1;
+  -webkit-transition: right 0.2s ease-in;
+}
+.explore-button:hover:before {
+  right: 0;
+}
+.section2 {
+  width: 100%;
+  background-color: #181515;
+  font-family: Manrope;
+  color: white;
+  padding-top: 74px;
+  padding-bottom: 105px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.top-part {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+  font-size: 26px;
+  color: #e8e8e8;
+  margin-bottom: 54px;
+}
+
+.mid-part {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  flex-wrap: wrap;
+  margin-bottom: 104px;
+}
+.mid-part img {
+  width: 342px;
+  height: 400px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.mid-part img:hover {
+  transform: scale(1.01);
+}
+.food-cart {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid white;
+}
+.food-cart-text img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.food-cart-text a {
+  text-decoration: none;
+  color: white;
+}
+.food-cart-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 21px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: Manrope;
+}
+.low-part {
+  display: flex;
+  justify-content: space-around;
+}
+.low-part p:first-of-type {
+  font-size: 28px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2.8px;
+}
+.low-part p {
+  font-size: 14 px;
+  text-align: center;
+}
+
+.section3 {
+  padding: 50px 50px;
+  background-image: url(images/Hyacinth\ ◦\ line\ drawing.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-color: #47797e;
+}
+.container {
+  display: flex;
+  height: 100%;
+  padding: 0px 50px;
+  gap: 40px;
+}
+.image-container {
+  width: 100%;
+  height: 100%;
+  flex-basis: 50%;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+}
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.text-blog {
+  flex-basis: 50%;
+}
+.since-p {
+  font-family: Gambetta Variable;
+  font-size: 22px;
+  color: #e8e8e8;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.traditional-p {
+  font-size: 52px;
+  font-family: Manrope;
+  font-weight: 600;
+  color: white;
+  font-style: none;
+  margin-bottom: 30px;
+}
+.paragrafi {
+  color: #e8e8e8;
+  font-family: Manrope;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 42px;
+}
+.book-table-button-2 {
+  padding: 11px 22px;
+  font-family: Gambetta Variable;
+  background-color: #936e48;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-right: 93px;
+  width: 123px;
+}
+.section4 {
+  padding: 68px 0px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #181515;
+  gap: 20px;
+}
+.italic-p-footer {
+  color: #fff;
+  font-family: Gambetta Variable;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+}
+.normal-p-footer {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.section4 div {
+  text-align: center;
+  margin-bottom: 25px;
+}
+footer {
+  width: 100%;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #47797e;
+}
+footer p {
+  color: white;
+  z-index: 2;
+  color: #fff;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@media (max-width: 1085px) {
+  .traditional-p {
+    font-size: 42px;
+  }
+  .paragrafi {
+    font-size: 16px;
+  }
+}
+@media (max-width: 846px) {
+  .traditional-p {
+    font-size: 36px;
+  }
+  .text-blog {
+    flex-shrink: 1;
+    font-size: 8px;
+  }
+}
+@media (max-width: 764px) {
+  .container {
+    flex-direction: column;
+  }
+  .image-container {
+    height: 100%;
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .text-section {
+    padding-top: 25%;
+  }
+  .section1 {
+    height: 100vh;
+  }
+  .book-table-button {
+    margin-right: 60px;
+  }
+}
+
+.toggle-button {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45px;
+  height: 42px;
+  border-radius: 6px;
+  background: #e0d4c7;
+  backdrop-filter: blur(2px);
+  display: none;
+  margin-right: 20px;
+  padding: 13px;
+}
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: #936e48;
+  border-radius: 10px;
+}
+
+@media (max-width: 601px) {
+  .left-section ul {
+    display: none;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .book-table-button {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .food-cart > img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+  }
+  .low-part {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .section3 {
+    padding: 25px;
+  }
+  .section4 {
+    gap: 30px;
+    padding: 20px;
+  }
+  .normal-p-footer,
+  .italic-p-footer {
+    font-size: 12px;
+  }
+}
+@media (max-width: 550px) {
+  .food-cart-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .section3 {
+    padding: 10px;
+    padding-top: 25px;
+  }
+  .text-section p {
+    font-size: 28px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+  .book-table-button-2 {
+    margin-bottom: 20px;
+  }
+  .text-section {
+    padding-top: 40%;
+  }
+}
+@media (max-width: 350px) {
+  .section3 {
+    padding: 3px;
+    padding-top: 20px;
+  }
+  .text-section p {
+    font-size: 24px;
+  }
+}
+.download-button {
+  border: 1.5px solid #936e48;
+  font-family: Manrope;
+  width: 110px;
+  height: 44px;
+  padding: 5px;
+  flex-shrink: 0;
+  font-size: 16px;
+
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* navbar*/
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  display: none;
+  background-color: rgb(0, 0, 0); /* Black fallback color */
+  background-color: rgba(0, 0, 0, 1); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+.stylebutton {
+  display: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: -3;
+}
+.stylebutton .bar {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  z-index: 1;
+}
+.stylebutton-active {
+  display: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.stylebutton-active .bar {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  font-family: Manrope;
+  font-size: 26px;
+  font-weight: 600;
+  padding: 30px;
+  justify-content: flex-start;
+  gap: 30px;
+  width: 100%;
+
+  margin-top: 100px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .overlay {
+    display: flex;
+  }
+  .stylebutton {
+    display: flex;
+  }
+}
+.contact-div {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+  margin-top: 101px;
+  margin-bottom: 50px;
+}
+.phone-number-text {
+  font-family: DM Serif Display;
+  color: white;
+  font-size: 20px;
+}
+.numri {
+  color: #b8946f;
+  font-family: Manrope;
+  font-size: 34px;
+}
+.section5 {
+  width: 100%;
+  background-color: #0f0d0d;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-around;
+  height: 70vh;
+}
+.adress-paragraph {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 10%;
+  padding-top: 5%;
+  background-color: #0f0d0d;
+}
+.map-div {
+  width: 50%;
+}
+.youcanfindus {
+  color: #e8e8e8;
+  font-family: Manrope;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.adress-p {
+  color: #e8e8e8;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 900px) {
+  .section5 {
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+  }
+  .map-div {
+    width: 100%;
+    height: 50%;
+  }
+  .adress-paragraph {
+    width: 100%;
+    height: 20%;
+  }
+
+  .adress-paragraph {
+    padding: 0px;
+    padding-top: 15%;
+  }
+}
