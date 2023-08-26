@@ -638,3 +638,9 @@ footer p {
     padding-top: 15%;
   }
 }
+.footer p a{
+  text-decoration: none;
+}
+.footer p a:visited{
+  text-decoration: none;
+}
