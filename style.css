@@ -61,6 +61,14 @@ body {
   display: flex;
   gap: 15px;
 }
+.left-section ul a{
+  text-decoration: none;
+  color: #fff;
+}
+.left-section ul a:visited{
+  text-decoration: none;
+  color: #fff;
+}
 .left-section ul a li {
   float: left;
   cursor: pointer;
