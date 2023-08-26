@@ -44,7 +44,7 @@
           
             <!-- Overlay content -->
             <div class="overlay-content">
-              <a onclick="closeNav()" href="https://cloud.caspeco.se/public/webBooking?system=se_munosk&unitId=13&fbclid=PAAabdtVTj1A5Curz7pJglTmeVn5ga_twkoA4mqXHffYiDZB93f19A0xmu8kQ_aem_AYlTtetnLU-21_27atb6H2KL1b3OHZRvI3sD_33MHoBkho5F6n9nZ5R3H8wTYCOfI2E">Meny</a>
+              <a id="overlay-menu-link" onclick="closeNav()" href="">Meny</a>
               <a onclick="closeNav()" href="#drink">Drinkar</a>
               <a onclick="closeNav()" href="#contact">Kontakt</a>
               <div class="contact-div">
@@ -155,6 +155,16 @@
         <p>2023 , All rights reserved</p>
     </footer>
     <script>
+        document.getElementById("overlay-menu-link").addEventListener("click", function() {
+            // Replace 'YOUR_PDF_URL' with the direct URL of your PDF file
+            const pdfUrl = 'menu1.pdf';
+            window.open(pdfUrl, '_blank'); // This will open the PDF in a new tab or window
+        })
+        document.getElementByClassName("food-cart").addEventListener("click", function() {
+            // Replace 'YOUR_PDF_URL' with the direct URL of your PDF file
+            const pdfUrl = 'menu1.pdf';
+            window.open(pdfUrl, '_blank'); // This will open the PDF in a new tab or window
+        })
         function openNav() {
             document.getElementById("myNav").style.width = "100%";
         }
@@ -165,7 +175,7 @@
         }
         document.getElementById("view-menu-button").addEventListener("click", function() {
             // Replace 'YOUR_PDF_URL' with the direct URL of your PDF file
-            const pdfUrl = 'Menu.pdf';
+            const pdfUrl = 'menu1.pdf';
             window.open(pdfUrl, '_blank'); // This will open the PDF in a new tab or window
         });
     </script>
