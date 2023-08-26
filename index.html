@@ -44,10 +44,9 @@
           
             <!-- Overlay content -->
             <div class="overlay-content">
-              <a href="#">Start</a>
-              <a href="#">Meny</a>
-              <a href="#">Drinkar</a>
-              <a href="#">Kontakt</a>
+              <a onclick="closeNav()" href="https://cloud.caspeco.se/public/webBooking?system=se_munosk&unitId=13&fbclid=PAAabdtVTj1A5Curz7pJglTmeVn5ga_twkoA4mqXHffYiDZB93f19A0xmu8kQ_aem_AYlTtetnLU-21_27atb6H2KL1b3OHZRvI3sD_33MHoBkho5F6n9nZ5R3H8wTYCOfI2E">Meny</a>
+              <a onclick="closeNav()" href="#drink">Drinkar</a>
+              <a onclick="closeNav()" href="#contact">Kontakt</a>
               <div class="contact-div">
                 <p class="phone-number-text">TELEFONUMMER</p>
                 <p class="numri">0491-3829‍74</p>
@@ -74,7 +73,7 @@
         <div class="mid-part">
             <div class="food-cart">
                 <img src="images/food1.png" alt="">
-                <div class="food-cart-text">
+                <div id="drink" class="food-cart-text">
                     <a href="#">Drinkar</a>
                     <img src="images/arrow.png" alt="">
                 </div>
@@ -110,7 +109,7 @@
                 <img src="images/blogimg.png" alt="">
             </div> 
             <div class="text-blog">
-                <p class="since-p">Since 2004</p>
+                <p class="since-p">Sedan 2018</p>
                 <p class="traditional-p">Traditionell restaurang i hjärtat av staden.</p>
                 <p class="paragrafi">Med sin avslappnade och lugna atmosfär är det den perfekta miljön för alla tillfällen, vare sig det är en romantisk måltid för två eller en middag med vänner.</p>
                 <a href="https://cloud.caspeco.se/public/webBooking?system=se_munosk&unitId=13&fbclid=PAAabdtVTj1A5Curz7pJglTmeVn5ga_twkoA4mqXHffYiDZB93f19A0xmu8kQ_aem_AYlTtetnLU-21_27atb6H2KL1b3OHZRvI3sD_33MHoBkho5F6n9nZ5R3H8wTYCOfI2E">
@@ -124,13 +123,13 @@
         <div class="adress-paragraph">
             <p class="italic-p-footer">Här finns vi</p>
             <p class="youcanfindus">You can find us here</p>
-            <p class="adress-p">Kungsgatan 7, Oskarshamn, Sweden</p>
+            <p class="adress-p">Kungsgatan 7, Oskarshamn, Sverige</p>
         </div>
         <div class="map-div">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2157.4138793263114!2d16.445602876825753!3d57.26666297368193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4657f5a328188343%3A0xba8ec76c5817f38e!2sKungsgatan%207%2C%20572%2030%20Oskarshamn%2C%20Sweden!5e0!3m2!1sen!2s!4v1691841237040!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-    <section class="section4">
+    <section id="contact" class="section4">
         <div>
             <p class="italic-p-footer">Vår Adress</p>
         <p class="normal-p-footer">Kungsgatan 7, Oskarshamn, Sverige</p>
