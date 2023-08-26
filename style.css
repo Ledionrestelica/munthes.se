@@ -430,7 +430,7 @@ footer p {
     font-size: 28px;
   }
   footer p {
-    font-size: 12px;
+    font-size: 10px;
   }
   .book-table-button-2 {
     margin-bottom: 20px;
@@ -446,6 +446,9 @@ footer p {
   }
   .text-section p {
     font-size: 24px;
+  }
+  footer p{
+    font-size: 8px;
   }
 }
 .download-button {
