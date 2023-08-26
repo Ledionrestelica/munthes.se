@@ -16,10 +16,13 @@
             <div class="left-section">
                 <img src="images/img_3736.png" alt="">
                 <ul>
-                    <li>Start</li>
-                    <li>Meny</li>
-                    <li>Drinkar</li>
-                    <li>Kontakt</li>
+                    <li id="navbar-link-menu">Meny</li>
+                    <li>
+                        <a href="#drink">Drinkar</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Kontakt
+                    </li>
                 </ul>
             </div>
             <div class="right-section">
@@ -154,6 +157,11 @@
         <p>2023 , All rights reserved, Made By <a href="https://www.alius.se/">Alius Media AB</a></p>
     </footer>
     <script>
+        document.getElementById("navbar-link-menu").addEventListener("click", function() {
+            // Replace 'YOUR_PDF_URL' with the direct URL of your PDF file
+            const pdfUrl = 'menu1.pdf';
+            window.open(pdfUrl, '_blank'); // This will open the PDF in a new tab or window
+        })
         document.getElementById("overlay-menu-link").addEventListener("click", function() {
             // Replace 'YOUR_PDF_URL' with the direct URL of your PDF file
             const pdfUrl = 'menu1.pdf';
