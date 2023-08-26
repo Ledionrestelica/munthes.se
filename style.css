@@ -640,6 +640,7 @@ footer p {
 }
 footer p a{
   text-decoration: none;
+  color: #ffffff
 }
 footer p a:visited{
   text-decoration: none;
