@@ -71,26 +71,26 @@
             <p>Medelhavsmat med traditionella italienska rätter och <br> cocktails i en stilren och växtrik miljö. </p>
         </div>
         <div class="mid-part">
-            <div class="food-cart">
+            <div id="food-cart1" class="food-cart">
                 <img src="images/food1.png" alt="">
                 <div id="drink" class="food-cart-text">
-                    <a href="#">Drinkar</a>
+                    <a href="">Drinkar</a>
                     <img src="images/arrow.png" alt="">
                 </div>
                 
             </div>
-            <div class="food-cart">
+            <div id="food-cart2" class="food-cart">
                 <img src="images/58091E55-CFD0-4B33-BA89-83DBAAE0C72F.jpeg" alt="">
                 <div class="food-cart-text">
-                    <a href="#">Maträtter</a>
+                    <a href="">Maträtter</a>
                     <img src="images/arrow.png" alt="">
                 </div>
                 
             </div>
-            <div class="food-cart">
+            <div id="food-cart3" class="food-cart">
                 <img src="images/IMG_9193.jpeg" alt="">
                 <div class="food-cart-text ">
-                    <a href="#">Dessert</a>
+                    <a href="">Dessert</a>
                     <img src="images/arrow.png" alt="">
                 </div>
                 
@@ -160,7 +160,17 @@
             const pdfUrl = 'menu1.pdf';
             window.open(pdfUrl, '_blank'); // This will open the PDF in a new tab or window
         })
-        document.getElementByClassName("food-cart").addEventListener("click", function() {
+        document.getElementById("food-cart1").addEventListener("click", function() {
+            // Replace 'YOUR_PDF_URL' with the direct URL of your PDF file
+            const pdfUrl = 'menu1.pdf';
+            window.open(pdfUrl, '_blank'); // This will open the PDF in a new tab or window
+        })
+        document.getElementById("food-cart2").addEventListener("click", function() {
+            // Replace 'YOUR_PDF_URL' with the direct URL of your PDF file
+            const pdfUrl = 'menu1.pdf';
+            window.open(pdfUrl, '_blank'); // This will open the PDF in a new tab or window
+        })
+        document.getElementById("food-cart3").addEventListener("click", function() {
             // Replace 'YOUR_PDF_URL' with the direct URL of your PDF file
             const pdfUrl = 'menu1.pdf';
             window.open(pdfUrl, '_blank'); // This will open the PDF in a new tab or window
