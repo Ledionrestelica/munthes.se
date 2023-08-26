@@ -61,7 +61,7 @@ body {
   display: flex;
   gap: 15px;
 }
-.left-section ul li a {
+.left-section ul a li {
   float: left;
   cursor: pointer;
 }
