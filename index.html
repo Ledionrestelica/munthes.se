@@ -1,201 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Munthes</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;700&family=Manrope:wght@400;500;600&family=Open+Sans:wght@400;500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;700&family=Manrope:wght@400;500;600&family=Open+Sans:wght@400;500&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <section class="section1">
-        <nav class="navbar">
-            <div class="left-section">
-                <img src="images/img_3736.png" alt="">
-                <ul>
-                    <li id="navbar-link-menu">Meny</li>
-                    <a href="#drink">
-                        <li>Drinkar</li>
-                    </a>
-                    <a href="#contact">
-                        <li>Kontakt</li>
-                    </a>                   
-                </ul>
-            </div>
-            <div class="right-section">
-                <button class="book-table-button"><i>Boka Bord</i></button>
-                <div class="toggle-button" onclick="openNav()">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
-        <div id="myNav" class="overlay">
-
-            <!-- Button to close the overlay navigation -->
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                <div class="toggle-button">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+      <nav class="navbar">
+        <div class="left-section">
+          <img src="images/img_3736.png" alt="" />
+          <ul>
+            <li id="navbar-link-menu">Menu</li>
+            <a href="#drink">
+              <li>Drinkar</li>
             </a>
-          
-            <!-- Overlay content -->
-            <div class="overlay-content">
-              <a id="overlay-menu-link" onclick="closeNav()" href="">Meny</a>
-              <a onclick="closeNav()" href="#drink">Drinkar</a>
-              <a onclick="closeNav()" href="#contact">Kontakt</a>
-              <div class="contact-div">
-                <p class="phone-number-text">TELEFONUMMER</p>
-                <p class="numri">0491-3829‍74</p>
-            </div>
-            </div>
-          
-          </div>
-          
-        <video playsinline autoplay muted loop class="video" src="images/Untitled.mp4"></video>
-        <div class="text-section">
-            
-            <p>God mat i en trevlig atmosfär.<br> Italiensk inspirerad mat och drinkar</p>
-            <a href="https://cloud.caspeco.se/public/webBooking?system=se_munosk&unitId=13&fbclid=PAAabdtVTj1A5Curz7pJglTmeVn5ga_twkoA4mqXHffYiDZB93f19A0xmu8kQ_aem_AYlTtetnLU-21_27atb6H2KL1b3OHZRvI3sD_33MHoBkho5F6n9nZ5R3H8wTYCOfI2E">
-                <button class="explore-button">Boka Bord</button>
+            <a href="#contact">
+              <li>Kontakt</li>
             </a>
-            
-        
+          </ul>
         </div>
+        <div class="right-section">
+          <button class="book-table-button"><i>Boka Bord</i></button>
+          <div class="toggle-button" onclick="openNav()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          <div class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a id="overlay-menu-link" onclick="closeNav()" href="">Meny</a>
+          <a onclick="closeNav()" href="#drink">Drinkar</a>
+          <a onclick="closeNav()" href="#contact">Kontakt</a>
+          <div class="contact-div">
+            <p class="phone-number-text">TELEFONUMMER</p>
+            <p class="numri">0491-3829‍74</p>
+          </div>
+        </div>
+      </div>
+
+      <video
+        playsinline
+        autoplay
+        muted
+        loop
+        class="video"
+        src="images/Untitled.mp4"
+      ></video>
+      <div class="text-section">
+        <p>
+          God mat i en trevlig atmosfär.<br />
+          Italiensk inspirerad mat och drinkar
+        </p>
+        <a
+          href="https://cloud.caspeco.se/public/webBooking?system=se_munosk&unitId=13&fbclid=PAAabdtVTj1A5Curz7pJglTmeVn5ga_twkoA4mqXHffYiDZB93f19A0xmu8kQ_aem_AYlTtetnLU-21_27atb6H2KL1b3OHZRvI3sD_33MHoBkho5F6n9nZ5R3H8wTYCOfI2E"
+        >
+          <button class="explore-button">Boka Bord</button>
+        </a>
+      </div>
     </section>
     <section class="section2">
-        <div id="food" class="top-part">
-            <p>Medelhavsmat med traditionella italienska rätter och <br> cocktails i en stilren och växtrik miljö. </p>
+      <div id="food" class="top-part">
+        <p>
+          Medelhavsmat med traditionella italienska rätter och <br />
+          cocktails i en stilren och växtrik miljö.
+        </p>
+      </div>
+      <div class="mid-part">
+        <div id="food-cart1" class="food-cart">
+          <img src="images/food1.png" alt="" />
+          <div id="drink" class="food-cart-text">
+            <a href="">Drinkar</a>
+            <img src="images/arrow.png" alt="" />
+          </div>
         </div>
-        <div class="mid-part">
-            <div id="food-cart1" class="food-cart">
-                <img src="images/food1.png" alt="">
-                <div id="drink" class="food-cart-text">
-                    <a href="">Drinkar</a>
-                    <img src="images/arrow.png" alt="">
-                </div>
-                
-            </div>
-            <div id="food-cart2" class="food-cart">
-                <img src="images/58091E55-CFD0-4B33-BA89-83DBAAE0C72F.jpeg" alt="">
-                <div class="food-cart-text">
-                    <a href="">Maträtter</a>
-                    <img src="images/arrow.png" alt="">
-                </div>
-                
-            </div>
-            <div id="food-cart3" class="food-cart">
-                <img src="images/IMG_9193.jpeg" alt="">
-                <div class="food-cart-text ">
-                    <a href="">Dessert</a>
-                    <img src="images/arrow.png" alt="">
-                </div>
-                
-            </div>
+        <div id="food-cart2" class="food-cart">
+          <img src="images/58091E55-CFD0-4B33-BA89-83DBAAE0C72F.jpeg" alt="" />
+          <div class="food-cart-text">
+            <a href="">Maträtter</a>
+            <img src="images/arrow.png" alt="" />
+          </div>
         </div>
-        <div class="low-part">
-            <p>MENY</p>
-            <p>Du kan ladda ner vår huvudmeny i en pdf-fil. En meny som inkluderar alla<br> måltider, drycker och viner.</p>
-            <button id="view-menu-button" class="download-button">Visa</button>
+        <div id="food-cart3" class="food-cart">
+          <img src="images/IMG_9193.jpeg" alt="" />
+          <div class="food-cart-text">
+            <a href="">Dessert</a>
+            <img src="images/arrow.png" alt="" />
+          </div>
         </div>
-
+      </div>
+      <div class="low-part">
+        <p>MENY</p>
+        <p>
+          Du kan ladda ner vår huvudmeny i en pdf-fil. En meny som inkluderar
+          alla<br />
+          måltider, drycker och viner.
+        </p>
+        <button id="view-menu-button" class="download-button">Visa</button>
+      </div>
     </section>
     <section class="section3">
-        <div class="container">
-            <div class="image-container">
-                <img src="new-pic.png" alt="">
-            </div> 
-            <div class="text-blog">
-                <p class="since-p">Sedan 2018</p>
-                <p class="traditional-p">Traditionell restaurang i hjärtat av staden.</p>
-                <p class="paragrafi">Med sin avslappnade och lugna atmosfär är det den perfekta miljön för alla tillfällen, vare sig det är en romantisk måltid för två eller en middag med vänner.</p>
-                <a href="https://cloud.caspeco.se/public/webBooking?system=se_munosk&unitId=13&fbclid=PAAabdtVTj1A5Curz7pJglTmeVn5ga_twkoA4mqXHffYiDZB93f19A0xmu8kQ_aem_AYlTtetnLU-21_27atb6H2KL1b3OHZRvI3sD_33MHoBkho5F6n9nZ5R3H8wTYCOfI2E">
-                    <button class="book-table-button-2">Boka Bord</button>
-                </a>                
-            </div>
-
+      <div class="container">
+        <div class="image-container">
+          <img src="new-pic.png" alt="" />
         </div>
+        <div class="text-blog">
+          <p class="since-p">Sedan 2018</p>
+          <p class="traditional-p">
+            Traditionell restaurang i hjärtat av staden.
+          </p>
+          <p class="paragrafi">
+            Med sin avslappnade och lugna atmosfär är det den perfekta miljön
+            för alla tillfällen, vare sig det är en romantisk måltid för två
+            eller en middag med vänner.
+          </p>
+          <a
+            href="https://cloud.caspeco.se/public/webBooking?system=se_munosk&unitId=13&fbclid=PAAabdtVTj1A5Curz7pJglTmeVn5ga_twkoA4mqXHffYiDZB93f19A0xmu8kQ_aem_AYlTtetnLU-21_27atb6H2KL1b3OHZRvI3sD_33MHoBkho5F6n9nZ5R3H8wTYCOfI2E"
+          >
+            <button class="book-table-button-2">Boka Bord</button>
+          </a>
+        </div>
+      </div>
     </section>
     <section class="section5">
-        <div class="adress-paragraph">
-            <p class="youcanfindus">Här finns vi</p>
-            <p class="adress-p">Kungsgatan 7, Oskarshamn, Sverige</p>
-        </div>
-        <div class="map-div">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2157.4138793263114!2d16.445602876825753!3d57.26666297368193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4657f5a328188343%3A0xba8ec76c5817f38e!2sKungsgatan%207%2C%20572%2030%20Oskarshamn%2C%20Sweden!5e0!3m2!1sen!2s!4v1691841237040!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+      <div class="adress-paragraph">
+        <p class="youcanfindus">Här finns vi</p>
+        <p class="adress-p">Kungsgatan 7, Oskarshamn, Sverige</p>
+      </div>
+      <div class="map-div">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2157.4138793263114!2d16.445602876825753!3d57.26666297368193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4657f5a328188343%3A0xba8ec76c5817f38e!2sKungsgatan%207%2C%20572%2030%20Oskarshamn%2C%20Sweden!5e0!3m2!1sen!2s!4v1691841237040!5m2!1sen!2s"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </section>
     <section id="contact" class="section4">
-        <div>
-            <p class="italic-p-footer">Vår Adress</p>
+      <div>
+        <p class="italic-p-footer">Vår Adress</p>
         <p class="normal-p-footer">Kungsgatan 7, Oskarshamn, Sverige</p>
-        </div>
-        <div>
-            <p class="italic-p-footer">Öppetider</p>
-            <p class="normal-p-footer">Tisdagar - Torsdagar: 16–23 </p>
-            <p class="normal-p-footer">Fredag & Lördag: 14 - Sent</p>
-            <p class="normal-p-footer">Söndagar - Stängt</p>
-        </div>
-        <div>
-            <p class="italic-p-footer">Email</p>
-            <p class="normal-p-footer">info@munthes.se</p>
-        </div>
-        <div>
-            <p class="italic-p-footer">Telefonnumer</p>
-            <p class="normal-p-footer">0491-3829‍74</p>
-        </div>
-        
-        
+      </div>
+      <div>
+        <p class="italic-p-footer">Öppetider</p>
+        <p class="normal-p-footer">Tisdagar - Torsdagar: 16–23</p>
+        <p class="normal-p-footer">Fredag & Lördag: 14 - Sent</p>
+        <p class="normal-p-footer">Söndagar - Stängt</p>
+      </div>
+      <div>
+        <p class="italic-p-footer">Email</p>
+        <p class="normal-p-footer">info@munthes.se</p>
+      </div>
+      <div>
+        <p class="italic-p-footer">Telefonnumer</p>
+        <p class="normal-p-footer">0491-3829‍74</p>
+      </div>
     </section>
     <footer>
-        <p>2023 , All rights reserved, Made By <a href="https://www.alius.se/">Alius Media AB</a></p>
+      <p>
+        2023 , All rights reserved, Made By
+        <a href="https://www.alius.se/">Alius Media AB</a>
+      </p>
     </footer>
     <script>
-        document.getElementById("navbar-link-menu").addEventListener("click", function() {
-            // Replace 'YOUR_PDF_URL' with the direct URL of your PDF file
-            const pdfUrl = 'FÖRRÄTT.pdf';
-            window.open(pdfUrl, '_blank'); // This will open the PDF in a new tab or window
-        })
-        document.getElementById("overlay-menu-link").addEventListener("click", function() {
-            // Replace 'YOUR_PDF_URL' with the direct URL of your PDF file
-            const pdfUrl = 'FÖRRÄTT.pdf';
-            window.open(pdfUrl, '_blank'); // This will open the PDF in a new tab or window
-        })
-        document.getElementById("food-cart1").addEventListener("click", function() {
-            // Replace 'YOUR_PDF_URL' with the direct URL of your PDF file
-            const pdfUrl = 'FÖRRÄTT.pdf';
-            window.open(pdfUrl, '_blank'); // This will open the PDF in a new tab or window
-        })
-        document.getElementById("food-cart2").addEventListener("click", function() {
-            // Replace 'YOUR_PDF_URL' with the direct URL of your PDF file
-            const pdfUrl = 'FÖRRÄTT.pdf';
-            window.open(pdfUrl, '_blank'); // This will open the PDF in a new tab or window
-        })
-        document.getElementById("food-cart3").addEventListener("click", function() {
-            // Replace 'YOUR_PDF_URL' with the direct URL of your PDF file
-            const pdfUrl = 'FÖRRÄTT.pdf';
-            window.open(pdfUrl, '_blank'); // This will open the PDF in a new tab or window
-        })
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-        }
+      document
+        .getElementById("navbar-link-menu")
+        .addEventListener("click", function () {
+          // Replace 'YOUR_PDF_URL' with the direct URL of your PDF file
+          const pdfUrl = "FÖRRÄTT.pdf";
+          window.open(pdfUrl, "_blank"); // This will open the PDF in a new tab or window
+        });
+      document
+        .getElementById("overlay-menu-link")
+        .addEventListener("click", function () {
+          // Replace 'YOUR_PDF_URL' with the direct URL of your PDF file
+          const pdfUrl = "FÖRRÄTT.pdf";
+          window.open(pdfUrl, "_blank"); // This will open the PDF in a new tab or window
+        });
+      document
+        .getElementById("food-cart1")
+        .addEventListener("click", function () {
+          // Replace 'YOUR_PDF_URL' with the direct URL of your PDF file
+          const pdfUrl = "FÖRRÄTT.pdf";
+          window.open(pdfUrl, "_blank"); // This will open the PDF in a new tab or window
+        });
+      document
+        .getElementById("food-cart2")
+        .addEventListener("click", function () {
+          // Replace 'YOUR_PDF_URL' with the direct URL of your PDF file
+          const pdfUrl = "FÖRRÄTT.pdf";
+          window.open(pdfUrl, "_blank"); // This will open the PDF in a new tab or window
+        });
+      document
+        .getElementById("food-cart3")
+        .addEventListener("click", function () {
+          // Replace 'YOUR_PDF_URL' with the direct URL of your PDF file
+          const pdfUrl = "FÖRRÄTT.pdf";
+          window.open(pdfUrl, "_blank"); // This will open the PDF in a new tab or window
+        });
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
 
-        /* Close when someone clicks on the "x" symbol inside the overlay */
-        function closeNav() {
+      /* Close when someone clicks on the "x" symbol inside the overlay */
+      function closeNav() {
         document.getElementById("myNav").style.width = "0%";
-        }
-        document.getElementById("view-menu-button").addEventListener("click", function() {
-            // Replace 'YOUR_PDF_URL' with the direct URL of your PDF file
-            const pdfUrl = 'FÖRRÄTT.pdf';
-            window.open(pdfUrl, '_blank'); // This will open the PDF in a new tab or window
+      }
+      document
+        .getElementById("view-menu-button")
+        .addEventListener("click", function () {
+          // Replace 'YOUR_PDF_URL' with the direct URL of your PDF file
+          const pdfUrl = "FÖRRÄTT.pdf";
+          window.open(pdfUrl, "_blank"); // This will open the PDF in a new tab or window
         });
     </script>
-    
-</body>
+  </body>
 </html>
